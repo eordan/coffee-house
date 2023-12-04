@@ -1,9 +1,13 @@
 {
-    "extends": "airbnb-base",
-    "env": {
-        "browser": true
-      },
-    "rules": {
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["vite.config.js"]}]
-    }
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["vite.config.js"] }
+    ],
+    "arrow-parens": ["error", "as-needed"]
+  }
 }
