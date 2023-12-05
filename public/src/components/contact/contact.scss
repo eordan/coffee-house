@@ -1,0 +1,140 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  height: 450px;
+  width: 1360px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: $background-container;
+  border-radius: 40px;
+  margin-bottom: 40px;
+}
+
+.right-container,
+.left-container {
+  height: 250px;
+  width: 530px;
+}
+
+.left-container {
+  margin: 0 100px;
+}
+
+.sip-savour-smile {
+  font-size: 60px;
+  font-weight: 600;
+  color: $text-light;
+  margin-bottom: 40px;
+  line-height: 125%;
+}
+
+.icons-container-twitter,
+.icons-container-insta,
+.icons-container-facebook {
+  height: 60px;
+  width: 60px;
+  border: 1px solid $border-light;
+  border-radius: 30px;
+  background-color: $background-container;
+}
+
+.icons-container-twitter,
+.icons-container-insta {
+  margin-right: 12px;
+}
+
+.icons-container-twitter {
+  background-image: url('../../../images/twitter.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.icons-container-twitter:hover {
+  background-color: $background-body;
+  background-image: url('../../../images/twitter-hover.svg');
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.icons-container-insta {
+  background-image: url('../../../images/instagram.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.icons-container-insta:hover {
+  background-color: $background-body;
+  background-image: url('../../../images/instagram-hover.svg');
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.icons-container-facebook {
+  background-image: url('../../../images/facebook.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+.icons-container-facebook:hover {
+  background-color: $background-body;
+  background-image: url('../../../images/facebook-hover.svg');
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.contact-us-block {
+  font-size: 24px;
+  font-weight: 600;
+  color: $text-light;
+  margin: 32px 0 40px;
+}
+
+.address-block,
+.phone-block,
+.shedule-block {
+  display: flex;
+}
+
+.address-block,
+.phone-block {
+  margin-bottom: 22px;
+}
+
+.address-block-text,
+.phone-block-text,
+.shedule-block-text {
+  position: relative;
+  cursor: pointer;
+  margin-left: 8px;
+  color: $text-light;
+}
+
+.address-block-text::after,
+.phone-block-text::after,
+.shedule-block-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.address-block-text:hover::after,
+.phone-block-text:hover::after,
+.shedule-block-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base", "prettier"],
   "env": {
     "browser": true
   },
@@ -8,6 +8,7 @@
       "error",
       { "devDependencies": ["vite.config.js"] }
     ],
-    "arrow-parens": ["error", "as-needed"]
+    "arrow-parens": ["error", "as-needed"],
+    "import/extensions": [0, "never"]
   }
 }
