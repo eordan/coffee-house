@@ -1,8 +1,8 @@
 import './app.scss';
-// import addMenu from '../components/menu/menu.js';
-// import addMainPage from '../pages/main/main.js';
+import addMenu from '../pages/menu/menu';
+import addMainPage from '../pages/main/main';
 // import addContact from '../components/contact/contact.js';
 
-// addMenu();
-// addMainPage();
+addMenu();
+addMainPage();
 // addContact();
