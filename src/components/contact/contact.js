@@ -1,4 +1,4 @@
-// import './contact.scss';
+import './contact.scss';
 
 export default function addContact() {
   const footer = document.querySelector('#footer');
