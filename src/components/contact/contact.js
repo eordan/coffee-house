@@ -27,16 +27,8 @@ export default function addContact() {
   iconsContainer.classList.add('icons-container');
 
   addSocialButton(iconsContainer, 'footer__twitter-button');
-
-  const iconsContainerInsta = iconsContainer.appendChild(
-    document.createElement('button'),
-  );
-  iconsContainerInsta.classList.add('icons-container-insta');
-
-  const iconsContainerFacebook = iconsContainer.appendChild(
-    document.createElement('button'),
-  );
-  iconsContainerFacebook.classList.add('icons-container-facebook');
+  addSocialButton(iconsContainer, 'footer__insta-button');
+  addSocialButton(iconsContainer, 'footer__facebook-button');
 
   const rightContainer = footerContainer.appendChild(
     document.createElement('div'),
