@@ -34,7 +34,7 @@
   line-height: 125%;
 }
 
-.icons-container-twitter,
+.footer__twitter-button,
 .icons-container-insta,
 .icons-container-facebook {
   height: 60px;
@@ -44,21 +44,21 @@
   background-color: $background-container;
 }
 
-.icons-container-twitter,
+.footer__twitter-button,
 .icons-container-insta {
   margin-right: 12px;
 }
 
-.icons-container-twitter {
-  background-image: url('../../../images/twitter.svg');
+.footer__twitter-button {
+  background-image: url('/images/twitter.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
 }
 
-.icons-container-twitter:hover {
+.footer__twitter-button:hover {
   background-color: $background-body;
-  background-image: url('../../../images/twitter-hover.svg');
+  background-image: url('/images/twitter-hover.svg');
   cursor: pointer;
   transition: all 0.3s ease-in;
 }

@@ -1,4 +1,5 @@
 import './contact.scss';
+import addSocialButton from '../../elements/social-button/social-button.js';
 
 export default function addContact() {
   const footer = document.querySelector('#footer');
@@ -25,10 +26,7 @@ export default function addContact() {
   );
   iconsContainer.classList.add('icons-container');
 
-  const iconsContainerTwitter = iconsContainer.appendChild(
-    document.createElement('button'),
-  );
-  iconsContainerTwitter.classList.add('icons-container-twitter');
+  addSocialButton(iconsContainer, 'footer__twitter-button');
 
   const iconsContainerInsta = iconsContainer.appendChild(
     document.createElement('button'),
