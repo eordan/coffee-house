@@ -10,5 +10,6 @@
     ],
     "arrow-parens": ["error", "as-needed"],
     "import/extensions": [0, "never"]
-  }
+  },
+  "ignorePatterns": ["node_modules", "dist"]
 }
