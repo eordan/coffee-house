@@ -1,4 +1,4 @@
-import './contact.scss';
+import './footer.scss';
 import addContactInfo from '../../elements/contact-info/contact-info.js';
 import addSocialButton from '../../elements/social-button/social-button.js';
 
