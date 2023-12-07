@@ -60,6 +60,18 @@
       background-image: url('/images/facebook-hover.svg');
     }
   }
+
+  &__info-icon {
+    &_address {
+      background-image: url('/images/pin.svg');
+    }
+    &_phone {
+      background-image: url('/images/phone.svg');
+    }
+    &_schedule {
+      background-image: url('/images/clock.svg');
+    }
+  }
 }
 
 .contact-us-block {
@@ -67,46 +79,4 @@
   font-weight: 600;
   color: $text-light;
   margin: 32px 0 40px;
-}
-
-.address-block,
-.phone-block,
-.shedule-block {
-  display: flex;
-}
-
-.address-block,
-.phone-block {
-  margin-bottom: 22px;
-}
-
-.address-block-text,
-.phone-block-text,
-.shedule-block-text {
-  position: relative;
-  cursor: pointer;
-  margin-left: 8px;
-  color: $text-light;
-}
-
-.address-block-text::after,
-.phone-block-text::after,
-.shedule-block-text::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.address-block-text:hover::after,
-.phone-block-text:hover::after,
-.shedule-block-text:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
