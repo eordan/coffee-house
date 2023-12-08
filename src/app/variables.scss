@@ -8,3 +8,21 @@ $background-backdrop: #403f3d;
 
 $border-light: #c1b6ad;
 $border-dark: #665f55;
+
+@mixin underline {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+@mixin underline-hover {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

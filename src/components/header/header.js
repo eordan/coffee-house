@@ -2,10 +2,9 @@ import './header.scss';
 // import addMainPage from '../../pages/main/main.js';
 // import addMenuPage from '../../pages/menu/menu.js';
 // import { globalState, changeState } from '../../service/state.js';
+import addHeaderLink from '../../elements/header-link/header-link';
 
-export default function addMenu() {
-  // let state = 'main';
-
+export default function addHeader() {
   const menu = document.querySelector('#header');
   menu.classList.add('header');
 
@@ -37,11 +36,13 @@ export default function addMenu() {
   const nav = navContainer.appendChild(document.createElement('nav'));
   nav.classList.add('nav');
 
-  const favoriteCoffeeButton = nav.appendChild(document.createElement('a'));
-  favoriteCoffeeButton.innerHTML = 'Favorite Coffee';
-  favoriteCoffeeButton.classList.add('button');
-  favoriteCoffeeButton.classList.add('favorite-coffee-button');
-  favoriteCoffeeButton.setAttribute('href', '#choose');
+  addHeaderLink(nav, 'Favorite Coffee', '#choose');
+
+  // const favoriteCoffeeButton = nav.appendChild(document.createElement('a'));
+  // favoriteCoffeeButton.innerHTML = 'Favorite Coffee';
+  // favoriteCoffeeButton.classList.add('button');
+  // favoriteCoffeeButton.classList.add('favorite-coffee-button');
+  // favoriteCoffeeButton.setAttribute('href', '#choose');
   // favoriteCoffeeButton.addEventListener('click', (event) => {
   //   if (globalState.page === 'menu') {
   //     event.preventDefault();

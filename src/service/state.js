@@ -1,7 +1,11 @@
-// export const globalState = {
-//     page: 'main',
-// };
+let globalState = {
+  page: 'main',
+};
 
-// export function changeState(newState) {
-//     globalState = { ...globalState, ...newState };
-// }
+export function getState() {
+  return globalState;
+}
+
+export function changeState(newState) {
+  globalState = { ...globalState, ...newState };
+}

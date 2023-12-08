@@ -1,0 +1,15 @@
+.header__link {
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: $text-dark;
+  &::after {
+    @include underline;
+  }
+  &:hover::after {
+    @include underline-hover;
+  }
+}
