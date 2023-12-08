@@ -1,0 +1,161 @@
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 799px;
+  margin: 0 auto;
+}
+
+.choose-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 1360px;
+  height: 799px;
+  margin: 100px 0 0;
+}
+
+.top-paragraph {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 125%;
+  color: $text-dark;
+}
+
+.slider-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 640px;
+  width: 1360px;
+  margin: 40px auto;
+  margin-bottom: 36px;
+}
+
+.slider-button {
+  height: 60px;
+  width: 60px;
+  border: 1px;
+  border: 1px solid $border-dark;
+  border-radius: 30px;
+  background-color: $background-body;
+}
+
+.right-slider-button {
+  background-image: url('../../../images/arrow-right.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.left-slider-button {
+  background-image: url('../../../images/arrow-left.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.right-slider-button:hover {
+  background-color: $background-container;
+  background-image: url('../../../images/arrow-right-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.left-slider-button:hover {
+  background-color: $background-container;
+  background-image: url('../../../images/arrow-left-hover.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  height: 640px;
+  width: 1152px;
+  margin: 40px auto;
+}
+
+.item-thin-container {
+  height: 640px;
+  width: 480px;
+}
+
+.slider-image {
+  height: 480px;
+  width: 480px;
+  background: url('../../../images/coffee-slider-1.png') 50% / cover no-repeat;
+}
+
+.coffee-name {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: $text-dark;
+  margin-top: 20px;
+}
+
+.coffee-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  color: $text-dark;
+  margin: 16px auto;
+}
+
+.coffee-price {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: $text-dark;
+}
+
+.slider-position-container {
+  display: flex;
+  justify-content: center;
+  height: 4px;
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.slider-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4px;
+  width: 144px;
+}
+
+.first-slider-position {
+  height: 4px;
+  width: 40px;
+  margin-right: 12px;
+  background-color: $border-dark;
+  border-radius: 2px;
+}
+
+.second-slider-position {
+  height: 4px;
+  width: 40px;
+  margin-right: 12px;
+  background-color: $border-light;
+  border-radius: 2px;
+}
+
+.third-slider-position {
+  height: 4px;
+  width: 40px;
+  background-color: $border-light;
+  border-radius: 2px;
+}
