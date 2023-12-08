@@ -1,6 +1,6 @@
 // import addMenuPage from '../../pages/menu/menu.js';
 // import { globalState, changeState } from '../../service/state.js';
-import './enjoy.scss';
+import './main-enjoy.scss';
 
 export default function addEnjoy() {
   const main = document.querySelector('#main');
