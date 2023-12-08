@@ -58,11 +58,13 @@ export default function addHeader() {
   //   }
   // });
 
-  const aboutButton = nav.appendChild(document.createElement('a'));
-  aboutButton.innerHTML = 'About';
-  aboutButton.classList.add('button');
-  aboutButton.classList.add('about-button');
-  aboutButton.setAttribute('href', '#resource');
+  addHeaderLink(nav, 'About', '#resource');
+
+  // const aboutButton = nav.appendChild(document.createElement('a'));
+  // aboutButton.innerHTML = 'About';
+  // aboutButton.classList.add('button');
+  // aboutButton.classList.add('about-button');
+  // aboutButton.setAttribute('href', '#resource');
   // aboutButton.addEventListener('click', (event) => {
   //   if (globalState.page === 'menu') {
   //     event.preventDefault();
@@ -78,11 +80,13 @@ export default function addHeader() {
   //   }
   // });
 
-  const mobileAppButton = nav.appendChild(document.createElement('a'));
-  mobileAppButton.innerHTML = 'Mobile App';
-  mobileAppButton.classList.add('button');
-  mobileAppButton.classList.add('mobile-app-button');
-  mobileAppButton.setAttribute('href', '#download');
+  addHeaderLink(nav, 'Mobile App', '#download');
+
+  // const mobileAppButton = nav.appendChild(document.createElement('a'));
+  // mobileAppButton.innerHTML = 'Mobile App';
+  // mobileAppButton.classList.add('button');
+  // mobileAppButton.classList.add('mobile-app-button');
+  // mobileAppButton.setAttribute('href', '#download');
   // mobileAppButton.addEventListener('click', (event) => {
   //   if (globalState.page === 'menu') {
   //     event.preventDefault();
@@ -98,10 +102,12 @@ export default function addHeader() {
   //   }
   // });
 
-  const contactUsButton = nav.appendChild(document.createElement('a'));
-  contactUsButton.innerHTML = 'Contact Us';
-  contactUsButton.classList.add('button');
-  contactUsButton.classList.add('contact-us-button');
+  addHeaderLink(nav, 'Contact Us', '#footer');
+
+  // const contactUsButton = nav.appendChild(document.createElement('a'));
+  // contactUsButton.innerHTML = 'Contact Us';
+  // contactUsButton.classList.add('button');
+  // contactUsButton.classList.add('contact-us-button');
   // contactUsButton.addEventListener('click', (event) => {
   //   if (globalState.page === 'menu') {
   //     event.preventDefault();
