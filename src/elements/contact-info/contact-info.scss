@@ -11,24 +11,27 @@
 
   &__info-text {
     position: relative;
-    cursor: pointer;
+    cursor: default;
     margin-left: 8px;
     color: $text-light;
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: currentColor;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-    &:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
+    &_clickable {
+      cursor: pointer;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
 }

@@ -19,6 +19,7 @@ export default function addContactInfo(
   infoText.classList.add('footer__info-text');
 
   if (isClickable) {
+    infoText.classList.add('footer__info-text_clickable');
     infoText.addEventListener('click', eventHandler);
   }
 }
