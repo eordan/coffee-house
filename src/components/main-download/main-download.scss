@@ -1,0 +1,119 @@
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 630px;
+  margin: 0 auto;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  width: 1360px;
+  height: 630px;
+  margin-bottom: 100px;
+}
+
+.download-text-container {
+  height: 342px;
+  width: 630px;
+}
+
+.download-top-paragraph {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  color: $text-dark;
+}
+
+.download-middle-paragraph {
+  height: 48px;
+  width: 630px;
+  margin: 40px 0;
+  line-height: 150%;
+  color: $text-dark;
+}
+
+.apple-button-container,
+.google-button-container {
+  height: 64px;
+  width: 200px;
+  border-radius: 100px;
+  margin-right: 20px;
+  border: 1px solid $border-dark;
+  background-color: $background-body;
+}
+
+.apple-button,
+.google-button {
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  width: 160px;
+  margin-left: 13px;
+}
+
+.apple-button-container:hover,
+.google-button-container:hover {
+  cursor: pointer;
+  background-color: $background-container;
+  transition: all 0.3s ease-in;
+}
+
+.apple-button-icon {
+  height: 36px;
+  width: 36px;
+  background-image: url('../../../images/apple-store-icon.svg');
+}
+
+.apple-button-container:hover .apple-button-icon {
+  background-image: url('../../../images/apple-store-icon-hover.svg');
+  transition: all 0.3s ease-in;
+}
+
+.google-button-icon {
+  height: 36px;
+  width: 36px;
+  background-image: url('../../../images/google-play-icon.svg');
+}
+
+.google-button-container:hover .google-button-icon {
+  background-image: url('../../../images/google-play-icon-hover.svg');
+  transition: all 0.3s ease-in;
+}
+
+.apple-button-text,
+.google-button-text {
+  width: 95px;
+  margin-left: 8px;
+  color: $text-dark;
+  text-align: left;
+}
+
+.apple-button-container:hover .apple-button-text,
+.google-button-container:hover .google-button-text {
+  color: $text-light;
+  transition: all 0.3s ease-in;
+}
+
+.apple-button-top-text,
+.google-button-top-text {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.apple-button-bottom-text,
+.google-button-bottom-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.image-container {
+  height: 630px;
+  width: 630px;
+  background-image: url('../../../images/mobile-screens.png');
+  margin-left: 100px;
+}
