@@ -1,0 +1,154 @@
+.behind {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  height: 1368px;
+  margin: 0 auto;
+}
+
+.behind-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1360px;
+  height: 1328px;
+  margin: 0;
+}
+
+.behind-title {
+  height: 150px;
+  width: 800px;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 40px;
+  line-height: 125%;
+  color: $text-dark;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.coffee-button,
+.tea-button,
+.desert-button {
+  border: 0;
+  border: 1px solid $border-light;
+  border-radius: 100px;
+  background-color: $background-body;
+}
+
+.coffee-button {
+  height: 46px;
+  width: 115px;
+}
+
+.tea-button {
+  height: 46px;
+  width: 90px;
+}
+
+.desert-button {
+  height: 46px;
+  width: 124px;
+}
+
+.coffee-button,
+.tea-button {
+  margin-right: 16px;
+}
+
+.coffee-button:hover,
+.tea-button:hover,
+.desert-button:hover {
+  cursor: pointer;
+  background-color: $background-container;
+  transition: all 0.3s ease-in;
+}
+
+.coffee-button-internal,
+.tea-button-internal,
+.desert-button-internal {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+  width: 110px;
+}
+
+.coffee-button-cup-container,
+.tea-button-cup-container,
+.desert-button-cup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 0 8px 0 2px;
+  border-radius: 100px;
+}
+
+.coffee-button-cup-container,
+.tea-button-cup-container,
+.desert-button-cup-container {
+  background-color: $border-light;
+}
+
+.coffee-button-cup,
+.tea-button-cup,
+.desert-button-cup {
+  height: 16px;
+  width: 16px;
+  margin: 0;
+}
+
+.coffee-button-cup {
+  background-image: url('../../../images/coffee-cup-menu.svg');
+}
+
+.tea-button-cup {
+  background-image: url('../../../images/teapot-menu.svg');
+}
+
+.desert-button-cup {
+  background-image: url('../../../images/dessert-menu.svg');
+}
+
+.coffee-button-text,
+.tea-button-text,
+.desert-button-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.coffee-button-text,
+.tea-button-text,
+.desert-button-text {
+  color: $text-dark;
+}
+
+.coffee-button:hover .coffee-button-text,
+.tea-button:hover .tea-button-text,
+.desert-button:hover .desert-button-text {
+  color: $background-body;
+  transition: all 0.3s ease-in;
+}
+
+.coffee-button:hover .coffee-button-cup-container,
+.tea-button:hover .tea-button-cup-container,
+.desert-button:hover .desert-button-cup-container {
+  background-color: $background-body;
+  transition: all 0.3s ease-in;
+}
+
+.coffee-element-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1200px;
+  width: 1360px;
+  margin: 40px 10px;
+  gap: 40px;
+}
