@@ -1,5 +1,5 @@
-// import addBehind from '../../components/behind/behind.js';
+import addBehind from '../../components/main-behind/main-behind.js';
 
 export default function addMenuPage() {
-  // addBehind();
+  addBehind();
 }
