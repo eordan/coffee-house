@@ -119,6 +119,7 @@ export default function addHeader() {
   // });
 
   // Create non-interactive button container
+
   const menuButtonContainer = menuContainer.appendChild(
     document.createElement('div'),
   );
