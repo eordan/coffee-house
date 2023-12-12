@@ -4,7 +4,7 @@ import {
   menuNames,
   menuDescriptions,
   menuPrices,
-} from '../../service/menu-items-info.js';
+} from '../../service/behind-info.js';
 import './main-behind.scss';
 
 export default function addBehind() {
