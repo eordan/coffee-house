@@ -45,14 +45,14 @@
 }
 
 .right-slider-button {
-  background-image: url('../../../images/arrow-right.svg');
+  background-image: url('/images/arrow-right.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
 }
 
 .left-slider-button {
-  background-image: url('../../../images/arrow-left.svg');
+  background-image: url('/images/arrow-left.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -60,7 +60,7 @@
 
 .right-slider-button:hover {
   background-color: $background-container;
-  background-image: url('../../../images/arrow-right-hover.svg');
+  background-image: url('/images/arrow-right-hover.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -70,7 +70,7 @@
 
 .left-slider-button:hover {
   background-color: $background-container;
-  background-image: url('../../../images/arrow-left-hover.svg');
+  background-image: url('/images/arrow-left-hover.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
