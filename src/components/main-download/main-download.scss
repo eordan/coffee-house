@@ -64,22 +64,22 @@
 .apple-button-icon {
   height: 36px;
   width: 36px;
-  background-image: url('../../../images/apple-store-icon.svg');
+  background-image: url('/images/apple-store-icon.svg');
 }
 
 .apple-button-container:hover .apple-button-icon {
-  background-image: url('../../../images/apple-store-icon-hover.svg');
+  background-image: url('/images/apple-store-icon-hover.svg');
   transition: all 0.3s ease-in;
 }
 
 .google-button-icon {
   height: 36px;
   width: 36px;
-  background-image: url('../../../images/google-play-icon.svg');
+  background-image: url('/images/google-play-icon.svg');
 }
 
 .google-button-container:hover .google-button-icon {
-  background-image: url('../../../images/google-play-icon-hover.svg');
+  background-image: url('/images/google-play-icon-hover.svg');
   transition: all 0.3s ease-in;
 }
 
